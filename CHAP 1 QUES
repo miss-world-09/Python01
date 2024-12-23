@@ -1,0 +1,27 @@
+# WAP TO ADD TWO NOS:-
+a=5
+b=6
+c=a+b
+print(c)
+
+# WAP TO FIND REMAINDER WHEN A NUMBER IS DIVIDED BY Z
+a=36
+b=5
+print("remainder is",a%b)
+
+# USE COMPARISON OPERATOR TO FIND WHETHER A GIVEN VARIABLE A IS GREATER THAN B OR NOT. TAKE A=34 AND B=80
+a=34
+b=80
+print("A is not greater than B",a>b)
+
+#WRITE A PROG TO FIND AN AVERAGE OF TWO NOS ENTERED BY USER
+a=int(input("enter number 1:-"))
+b=int(input("enter number 2:-"))
+
+print("average of two nos",(a+b)/2)
+
+# WAP TO FIND SQUARE OF TWO NOS ENTERED BY USER:-
+a=int(input("Enter number 1="))
+b=int(input("Enter number 2:-"))
+print("The square of number 1 is:-",a*a)
+print("The square of number 2 is :-",b*b)
