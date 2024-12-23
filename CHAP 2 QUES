@@ -1,0 +1,16 @@
+# WAP TO DISPLAY A USER ENTERED NAME FOLLOWED BY GOOD AFTERNOON USING INPUT()FUNCTON
+name=input("Enter your name")
+print(f"Good Afternoon {name}")
+
+# 02:- WAP TO DETECT DOUBLE SPACE IN STRING
+name="Sita is a good girl"
+print(name.find("  "))
+
+# Q3:- REPLACE DOUBLE SPACE WITH SINGLE SPACE
+name="Sita is a good girl"
+print(name.replace("  ",""))
+
+#Q4:- WAP TO FORMAT THE FOLLOWING LETTER USING ESCAPE SEQUENCE CHARACTER. 
+# letter="Dear Sita,you are a good girl"
+letter="Dear Sita,\n\tyou are a good girl"
+print(letter)
