@@ -1,0 +1,62 @@
+# WAP TO CREATE DICTIONARY OF HINDI WORDS WITH VALUE AS THEIR ENGLISH TRANSLATION. PROVIDE USER AN OPTION TO LOOP IT UP.
+# words={
+#     "parde":"curtain",
+#     "kursi":"chair",
+#     "gadi":"car",
+#     "sundar":"beautiful"
+# }
+# word=input("enter the word you want the meaning of:-")
+# print(words[word])
+
+# WAP TO INPUT EIGHT NOS FROM THE USER AND DISPLAY ALL UNIQUE NOS(ONCE)
+# no=int(input("Enter the first number :-"))
+# no=int(input("Enter the second number :-"))
+# no=int(input("Enter the third number :-"))
+# no=int(input("Enter the fouth number :-"))
+# no=int(input("Enter the fifth number :-"))
+# no=int(input("Enter the sixth number :-"))
+# no=int(input("Enter the seventh number :-"))
+# no=int(input("Enter the eight number :-"))
+
+# print(no)
+# s1={no}
+# s2={no}
+# print(s1.intersection(s2))
+
+# CAN WE HAVE A SET WITH 18(INT) AND '18'(STR) AS A VALUE IN IT?
+s=set()
+s.add(18)
+s.add("18")
+print(s)
+
+# WHAT WILL THE LENGTH OF FOLLOWING SET S:-
+s=set()
+s.add(20)
+s.add(20.0)
+s.add('20')
+print(s)
+print(len(s))
+# OUTPUT:- 2 BECAUSE 20 AND 20.0 IS SAME
+
+# S={} WHAT IS THE TYPE OF 'S'?
+# ANS:- DICTIONARY
+
+# CREATE AN EMPTY DICTIONARY ALLOW 4 FRIENDS TO ENTER THEIR FAVOURITE LANGUAGE AS VALUE AND USE KEY AS THEIR NAME .ASSUME THAT NAMES ARE UNIQUES
+d={}
+name=input("enter friends name:")
+lang=input("enter favourite language")
+d.update({name:lang})
+
+name=input("enter friends name:")
+lang=input("enter favourite language")
+d.update({name:lang})
+
+name=input("enter friends name:")
+lang=input("enter favourite language")
+d.update({name:lang})
+
+name=input("enter friends name:")
+lang=input("enter favourite language")
+d.update({name:lang})
+print(d)
+
