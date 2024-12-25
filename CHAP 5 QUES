@@ -1,0 +1,73 @@
+# WAP TO FIND GREATEST OF FOUR NO ENTERED BY USER
+a=int(input("Enter the number 1:"))
+b=int(input("Enter the number 2:"))
+c=int(input("Enter the number 3:"))
+d=int(input("Enter the number 4:"))
+if(a>b and a>c and a>d):
+    print("Number 1 is greatest",a)
+elif(b>a and b>c and b>d):
+    print("Number 2 is greatest",b)
+elif(c>a and c>b and c>d):
+    print("Number 3 is greatest",c)
+else:
+    print("Number 4 is greatest",d)
+
+# WAP TO FIND OUT WHETHER THE STUDENT HAS PASSED OR FAILED IF IT REQUIRES A 40% AND ATLEAST 33% IN EACH SUBJECT TO PASS. ASSUME 3 SUBJECTS AND TAKE MARKS AS INPUT FROM THE USER.
+a=int(input("Enter the marks of first subject:"))
+b=int(input("Enter the marks of first subject:"))
+c=int(input("Enter the marks of first subject:"))
+
+percentage=(100*(a+b+c))/300
+if(percentage>=40):
+    print("you are pass")
+else:
+    print("you are failed")
+
+#  A SPAM COMMENT IS DEFINED AS TEXT CONTAINING FOLLOWING KEYWORDS: "Make a lot of money","click this","subscribe this","buy now". WAP TO DETECT THIS SPAM.
+P1="Make a lot of money"
+P2="click this"
+P3="subscribe this"
+P4="buy now"
+message=input("Enter your comment")
+if((P1 in message) or (P2 in message) or (P3 in message) or(P4 in message)):
+    print("this comment is spam")
+else:
+    print("this comment is not spam")
+    
+# WAP TO FIND WHETHER A GIVEN USERNAME CONTAINS LESS THAN 10 CHARACTERS OR NOT.
+name=input("enter your username")
+if(len(name)<10):
+    print("Your username contain less than 10 character")
+else:
+    print("perfect user name")
+
+# WAP WHICH FINDS OUT WHETHER A GIVEN NAME IS PRESENT IN LIST OR NOT
+l=["rama","rahul","geeta","sita","riya"]
+name=input("Enter your name:")
+if(name in l):
+    print("Your name is in list")
+else:
+    print("your name is not in the list")
+
+# WAP TO CALCULATE THE GRADE OF STUDENT FROM HIS MARKS FROM FOLLOWING SCHEME:-
+# 90-100=Ex
+# 80-90=A
+# 70-80=B
+# 60-70=C
+# 50-60=D
+# <50=F
+marks=int(input("Enter your marks"))
+if(marks<=100 and marks>=90):
+  grade="Ex"
+elif(marks<=90 and marks>=80):
+   grade="A"
+elif(marks<=80 and marks>=70):
+   grade="B"
+elif(marks<=70 and marks>=60):
+   grade="C"
+elif(marks<=60 and marks>=50):
+   grade="D"
+elif(marks<50):
+   grade="F"
+
+   print("Your grade is",grade)
