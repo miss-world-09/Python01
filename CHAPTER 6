@@ -50,15 +50,15 @@ else:
     print("done")  #this is printed when loop exhausts
 
 # Break statement:- used to come out of the loop encountered it instructs the program to exits out the loop
-for i in range(0,50):
- print(i)
- if i==3
-  break
+# for i in range(0,50):
+#  print(i)
+#  if i==3
+#   break
 
-for i in range(50 ):
-  if (i==36):
-    continue #skip this iteration
-  print(i)
+# for i in range(50 ):
+#   if (i==36):
+#     continue #skip this iteration
+#   print(i)
 
 # Pass statement:- it is null statement it instructs to do nothing
 for i in range(655):

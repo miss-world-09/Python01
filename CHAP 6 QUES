@@ -1,0 +1,70 @@
+# WAP TO PRINT MULTIPLICATION TABLE OF A GIVEN NUMBER USING FOR LOOP:-
+# n=int(input("Enter a number:"))
+# for i in range(0,11):
+#     print(f"{n}X{i}={n*i}")
+
+# WAP TO GREET ALL THE PERSON NAME STORED INT HE LIST 'l' AND WHICH STARTS WITH S.
+# l=["riya","tanmay","sahil","tamana"]
+# for name in l:
+#     if(name.startswith("s")):
+#         print(f"Hello {name}")
+
+# ATTEMPT PROBLEM 1 USING WHILE LOOP:-
+# n=int(input("Enter a number"))
+# i=1
+# while(i<11):
+#     print(f"{n}X{i}={n*i}")
+#     i+=1
+
+# WAP TO FIND WHETHER A GIVEN NO IS PRIME OR NOT
+# n=int(input("Enter a number:"))
+# if (n%2==0):
+#     print("The number is prime")
+# else:
+#     print("The number is not prime")
+
+# WAP TO FIND THE SUM OF N NATURAL NOS USING WHILE LOOP.
+# n=int(input("Enter a number"))
+# i=1
+# sum=0
+# while(i<=n):
+#     sum+=i
+#     i+=1
+#     print(sum)
+
+# WAP TO CALCULATE FACTORIAL OF A GIVEN NUMBER USING FOR LOOP
+# n=int(input("Enter a number"))
+# product=1
+# for i in range(1,n+1):
+#     product=product*i
+#     print(f"the factorial is{n} is {product}")
+
+# WAP TO PRINT STAR PROGRAM:-
+# n = int(input("Enter the number: "))
+# for i in range(1, n+1):
+#     print(" "* (n-i), end="")
+#     print("*"* (2*i-1), end="")
+#     print("")
+
+# WAP TO PRINT STAR PROGRAM:
+n=int(input("Enter a no:"))
+for i in range(1,n+1):
+    print("*"*i,end="")
+    print("")
+
+# WAP TO PRINT STAR PROGRAM:
+n = int(input("Enter the number: "))
+for i in range(1, n+1): 
+    if(i==1 or i==n):
+        print("*"* n, end="")
+    else:
+        print("*", end="")
+        print(" "* (n-2), end="")
+        print("*", end="")
+    print("")
+
+# WAP MULTIPICATION TABLE OF N USING FOR LOOPS IN REVERSED ORDER
+n = int(input("Enter the number: "))
+
+for i in range(1, 11):
+    print(f"{n} X {11 -i} = {n*(11-i)}")
