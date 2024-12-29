@@ -1,0 +1,50 @@
+# WAP USING FUNCTIONS TO FIND GREATEST OF THREE NOS:-
+
+def greatest(a,b,c):
+    if(a>b and a>c):
+        return a
+    elif(b>a and b>c):
+        return b
+    elif(c>a and c>b):
+        return c
+a=3
+b=7
+c=8
+print(greatest(a,b,c))
+
+# WAP TO USING FUNCTION TO CONVERT CELCIUS TO FAHRENHEIT
+def ftoc(f):
+    return 5*(f-32)/9
+
+f = int(input("Enter temperature in F: "))
+c = ftoc(f)
+print(f"{round(c, 2)}°C")
+
+# HOW DO YOU PREVENT A PYTHON print() FUNCTION TO PRINT A NEW LINE AT END
+
+# WRITE A RECURSIVE FUNCTION TO CALCULATE THE SUM OF FIRST N NATURAL NOS.
+def sum(n):
+    if(n==1):
+        return 1
+    return sum(n-1)+n
+print(sum(4))
+
+# WAP TO PRINT STAR PATTERN
+def star(n):
+    if(n==0):
+     return
+    print("*"*n)
+    star(n-1)
+star(6)
+
+# WAP THAT CONVERTS INCHES TO CM
+def inch_to_cm(inch):
+    return inch*2.54
+n=int(input("Enter value in inches"))
+print(f"the value in cm is{inch_to_cm(n)}")
+
+# WAP TO PRINT MULTIPLICATION TABLE:
+def multiply(n):
+    for i in range(1,11):
+        print(f"The multiplication table is:{n}*{i}={n*i}")
+multiply(5)
