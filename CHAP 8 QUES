@@ -1,0 +1,68 @@
+# QUES1:- WAP TO READ THE TEXT FROM A GIVEN FILE 'POEM.TXT' AND FIND OUT WHETHER IT CONTAINS WORD TWINKLE OR NOT.
+f=open("poem.txt")
+content=f.read()
+if("twinkle " in content):
+    print("The word twinkle is present in content")
+else:
+    print("the word twinkle is not present in content")
+f.close()
+
+#QUES2:- The game() function in a program lets a user play a game and returns the score as an integer. You need a read file'Hi-score.txt' which either contains blank or contain the previous Hi-score. You need to write a program to update the Hi-score whenever the game()function breaks the Hi-score.  
+import random
+
+def game(): 
+    print("You are playing the game..")
+    score = random.randint(1, 62)
+    # Fetch the hiscore
+    with open("hiscore.txt") as f:
+        hiscore = f.read()
+        if(hiscore!=""):
+            hiscore = int(hiscore)
+        else:
+            hiscore = 0
+
+    print(f"Your score: {score}")
+    if(score>hiscore):
+        # write this hiscore to the file
+        with open("hiscore.txt", "w") as f:
+            f.write(str(score))
+
+    return score
+
+game()
+
+#QUES 3:- 
+
+# def generateTable(n):
+#     table = ""
+#     for i in range(1, 11):
+#         table += f"{n} X {i} = {n*i}\n"
+    
+#     with open(f"tables/table_{n}.txt", "w") as f:
+#         f.write(table)
+
+
+# for i in range(2, 21):
+#     generateTable(i)
+
+#A file conatin the word "Donkey" multiple times. You need to write a program which replace this word with ##### and update in the file.
+word="Donkey"
+with open("file.txt","r") as f:
+    content=f.read()
+contentnew=content.replace(word,"#####")
+with open("file.txt","w") as f:
+    f.write(contentnew)
+
+# WAP TO MINE A LOG FILE AND FIND OUT WHETHER IT CONTAINS "PYTHON" OR NOT.
+with open("table_2.txt") as f:
+    content=f.read()
+if("python" in content):
+    print("yes pyhton is present")
+else:
+    print("pyhton is not present")
+
+# WAP TO MAKE A COPY OF TEXT FILE "this.txt"
+with open("poem.txt") as f:
+    content=f.read()
+with open("poem_copy.txt","w") as f:
+    f.write(content)
