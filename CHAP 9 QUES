@@ -1,0 +1,87 @@
+# CREATE A CLASS "PROGRAMMER" FOR STORING THE INFORMATION OF FEW PROGRAMMERS WORKING AT THE MICROSOFT
+class programmer:
+    company="microsoft"
+    def __init__(self, name, salary, pin):
+
+    # def_init_(self,name,salary,pin):
+     self.name=name
+     self.salary=salary
+     self.pin=pin 
+p= programmer("riya",120000,2436)
+print(p.name,p.salary,p.pin)
+r=programmer("tiya",465865,76644)
+print(r.name,r.salary,r.pin)
+
+
+# WRITE A CLASS "CALCULATOR" CAPABLE OF FINDING SQUARE,CUBE AND SQUARE ROOT OF A NUMBER.
+class Calculator:
+    def __init__(self, n):
+        self.n = n 
+    
+    def square(self):
+        print(f"The square is {self.n*self.n}")
+
+    def cube(self):
+        print(f"The cube is {self.n*self.n*self.n}")
+
+    def squareroot(self):
+        print(f"The squareroot is {self.n**1/2}")
+
+a = Calculator(4)
+a.square()
+a.cube()
+a.squareroot()
+
+# CREATE A CLASS WITH CLASS ATTRIBUTE a; CREATE AN OBJECT FROM IT AND SET 'a' DIRECTLY USING OBJECT.A=0. DOES THIS CHANGE THE CLASS ATTRIBUTE?
+class demo:
+    a=4
+o=demo()
+print(o.a) #print class atrribute because instance class is not present 
+o.a=0 #instance attribute is set
+print(o.a) #print instance attribute because instance attribute is present
+print(demo.a) #print the class attribute
+
+# ADD A STATIC METHOD IN PROBLEM 2, TO GREET THE USER WITH HELLO.
+class Calculator:
+    def __init__(self, n):
+        self.n = n 
+    
+    def square(self):
+        print(f"The square is {self.n*self.n}")
+
+    def cube(self):
+        print(f"The cube is {self.n*self.n*self.n}")
+
+    def squareroot(self):
+        print(f"The squareroot is {self.n**1/2}")
+    @staticmethod
+    def hello():
+     print("Hello!")
+a = Calculator(4)
+a.square()
+a.cube()
+a.squareroot()
+a.hello()
+
+# WRITE A CLASS TRAIN WHICH HAS METHOD TO BOOK TICKET, GET STATUS(NO OF SEAT) AND GET FARE INFORMATION OF TRAIN RUNNING UNDER INDIAN RAILWAY.
+from random import randint
+
+class Train:
+
+    def __init__(self, trainNo):
+        self.trainNo = trainNo
+
+    def book(self, fro, to):
+        print(f"Ticket is booked in train no: {self.trainNo} from {fro} to {to}") 
+
+    def getStatus(self):
+        print(f"Train no: {self.trainNo} is running on time") 
+
+    def getFare(self, fro, to):
+        print(f"Ticket fare in train no: {self.trainNo} from {fro} to {to} is {randint(222, 5555)}")  
+
+
+t = Train(12399)
+t.book("Rampur", "Delhi")
+t.getStatus()
+t.getFare("Rampur", "Delhi")
