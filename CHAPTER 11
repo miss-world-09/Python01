@@ -71,4 +71,42 @@ else:
     # code
     # else code is only executed if try code is successfully executed.
 
+# TRY WITH FINALLY CLAUSE:- IT ALWAYS EXECUTE ONCE IN PROGRAM REGARDLESS OF ERROR.
+# try:
+    # code
+# except:
+    # code
+# finally:
+    # code
+
+# IF __NAME__=='__MAIN__' IN PYHTON
+# __NAME__ EVALUATES TO THE NAME OF THE MODULE WHERE THE PROGRAM IS RAN.
+
+# def myfunc():
+#     print("Hello World!")
+
+# if__name__== "__main__" :
+# print("Here is the code")
+# myfunc()
+# print(__name__)
+
+# GLOBAL KEYWORD:- "GLOBAL" KEYWORD IS USED TO MODIFY THE VARIABLE OUTSIDE OF THE CURRENT SCOPE.
+a=89
+def fun():
+    global a
+    a=4
+    print(a)
+
+fun()
+print(a)
+
+# ENUMERATE FUNCTION:- THE ENUMERATE FUNCTION ADDS COUNTER TO AN ITERABLE AND RETURN IT.
+l=[3,55,87,99]
+for index, item in enumerate(l):
+    print(f"The item number at index {index} is {item}")
+
+# LIST COMPREHENSIONS:- 
+mylist=[1,2,3,4,5]
+squaredlist=[i*i for i in mylist]
+print(squaredlist)
 
