@@ -1,0 +1,39 @@
+# WAP TO OPEN THREE FILES 1.TXT, 2.TXT, 3.TXT IF ANY OF THESE FILES ARE NOT PRESENT A MESSAGE WITHOUT EXISTING THE PROGRAM MUST BE PRINTED PROMPTING THE SAME.
+try:
+    with open("1.txt","r") as f:
+        print(f.read())
+except Exception as e:
+  print(e)
+
+try:
+   with open("2.txt","r") as f:
+      print(f.read())
+except Exception as e:
+   print(e)
+
+try:
+   with open("3.txt","r") as f:
+      print(f.read())
+except Exception as e:
+ print(e)
+
+# WAP TO PRINT THIRD,FIFTH AND SEVENTH ELEMENT FROM A LIST USING ENUMERATE FUNCTION.
+l=[2,4,6,7,3,5,9,2,3,7,8,4,5]
+for i, item in enumerate(l):
+   if i==2 or i==4 or i==6:
+      print(item)
+    
+# WRITE A LIST COMPREHENSION TO PRINT A LIST WHICH CONTAIN THE MULTIPLICATION TABLE OF A USER ENTERED NUMBER.
+
+n=int(input("ENTER A NUMBER"))
+table=[n*i for i in range(1,11,)]
+print(table)
+
+# WAP TO DISPLAY A/B WHERE A AND B ARE INTEGERS. IF B=0 DISPLAY INFINITE BY HANDLING THE 'ZERODIVISIONERROR'.
+try:
+   a=int(input("ENTER A:"))
+   b=int(input("ENTER B:"))
+   print(a/b)
+except ZeroDivisionError as v:
+      print("infinite")
+
